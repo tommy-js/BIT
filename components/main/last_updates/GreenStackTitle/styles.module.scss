@@ -1,0 +1,44 @@
+.green_stack_title {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid red;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.title_container {
+  border: 1px solid blue;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.image_container {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  top: -7.5px;
+  font-size: 20px;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+
+.subtitle {
+  position: relative;
+}
