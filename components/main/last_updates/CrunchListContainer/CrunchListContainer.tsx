@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { CrunchListTitle } from "../CrunchListTitle/CrunchListTitle";
 import styles from "./styles.module.scss";
 
@@ -11,6 +12,16 @@ export const CrunchListContainer: React.FC = () => {
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
     >
+      <Link href="/updates/crunchlist/0.1" passHref>
+        <CrunchListLink expanded={expanded} />
+      </Link>
+    </div>
+  );
+};
+
+const CrunchListLink = React.forwardRef(({ onClick, href, expanded }, ref) => {
+  return (
+    <a href={href} onClick={onClick} ref={ref}>
       <div className={styles.image_container}>
         <img
           className={styles.image}
@@ -18,6 +29,6 @@ export const CrunchListContainer: React.FC = () => {
         />
       </div>
       <CrunchListTitle expanded={expanded} />
-    </div>
+    </a>
   );
-};
+});

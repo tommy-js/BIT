@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { GreenStackTitle } from "../GreenStackTitle/GreenStackTitle";
 import styles from "./styles.module.scss";
 
@@ -11,6 +12,16 @@ export const GreenStackContainer: React.FC = () => {
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
     >
+      <Link href="/updates/greenstack/0.1" passHref>
+        <GreenStackLink expanded={expanded} />
+      </Link>
+    </div>
+  );
+};
+
+const GreenStackLink = React.forwardRef(({ onClick, href, expanded }, ref) => {
+  return (
+    <a href={href} onClick={onClick} ref={ref}>
       <div className={styles.image_container}>
         <img
           className={styles.image}
@@ -18,6 +29,6 @@ export const GreenStackContainer: React.FC = () => {
         />
       </div>
       <GreenStackTitle expanded={expanded} />
-    </div>
+    </a>
   );
-};
+});
