@@ -5,7 +5,7 @@ interface Props {
   expanded: boolean;
 }
 
-export const GreenStackTitle: React.FC<Props> = (props) => {
+export const CrunchListTitle: React.FC<Props> = (props) => {
   const [height, setHeight] = useState("50px");
   const [backgroundColor, setBackgroundColor] = useState("transparent");
   const [color, setColor] = useState("white");
@@ -25,17 +25,17 @@ export const GreenStackTitle: React.FC<Props> = (props) => {
   return (
     <div
       style={{ height, backgroundColor }}
-      className={styles.green_stack_title}
+      className={styles.crunch_list_title}
     >
       <div className={styles.title_container}>
         <div className={styles.image_container}>
           <img
             className={styles.image}
-            src={require("../../../../public/greenstack_logo.png")}
+            src={require("../../../../public/crunchlist_logo.png")}
           />
         </div>
         <p style={{ color }} className={styles.title}>
-          GreenStack
+          CrunchList
         </p>
       </div>
       <div className={styles.subtitle}>
