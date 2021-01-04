@@ -10,6 +10,9 @@ type Product = {
   img: string;
   title: string;
   shortDesc: string;
+  color: string;
+  link: string;
+  id: number;
 };
 
 export const Products: React.FC = () => {
@@ -18,10 +21,12 @@ export const Products: React.FC = () => {
   const [desc, setDesc] = useState(
     "A social network and education platform centered around the stock market."
   );
+  const [link, setLink] = useState("/products/greenstack");
 
   useEffect(() => {
     setTitle(products[selected].title);
     setDesc(products[selected].shortDesc);
+    setLink(products[selected].link);
   }, [selected]);
 
   const products = [
@@ -31,6 +36,7 @@ export const Products: React.FC = () => {
       shortDesc:
         "A social network and education platform centered around the stock market.",
       color: "green",
+      link: "/products/greenstack",
       id: 0,
     },
     {
@@ -39,6 +45,7 @@ export const Products: React.FC = () => {
       shortDesc:
         "Productivity platform built to help the user maximize their time utilization.",
       color: "red",
+      link: "/products/crunchlist",
       id: 1,
     },
   ];
@@ -57,11 +64,12 @@ export const Products: React.FC = () => {
             title={el.title}
             color={el.color}
             id={el.id}
+            key={el.id}
             modDisplay={modDisplay}
           />
         ))}
       </div>
-      <ProductDescriptor title={title} shortDesc={desc} />
+      <ProductDescriptor title={title} shortDesc={desc} link={link} />
     </div>
   );
 };

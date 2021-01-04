@@ -1,0 +1,27 @@
+@import "../../globals/variables.scss";
+
+.logo {
+  cursor: pointer;
+  width: 75px;
+}
+
+.img_container {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  position: relative;
+  top: -10px;
+  font-size: 22px;
+  display: inline-block;
+  @include noselect;
+}
