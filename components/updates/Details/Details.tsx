@@ -22,7 +22,7 @@ export const Details: React.FC<Props> = (props) => {
       <h1 className={styles.title}>{props.title}</h1>
       <p className={styles.timestamp}>{returnDate(props.timestamp)}</p>
       <p className={styles.version}>Version: {props.version}</p>
-      <Link href={`/${props.productInfo.productLink}`} passHref>
+      <Link href={`${props.productInfo.productLink}`} passHref>
         <ProductLink
           icon={props.productInfo.icon}
           product={props.productInfo.product}
