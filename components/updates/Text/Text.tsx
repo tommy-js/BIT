@@ -7,15 +7,13 @@ type Text = {
 };
 
 interface Props {
-  text: Text[];
+  text: Text;
 }
 
 export const Text: React.FC<Props> = (props) => {
   return (
     <p className={styles.text}>
-      {props.text.map((el: any) => (
-        <p key={el.id}>{el.val}</p>
-      ))}
+      <p key={props.text.id}>{props.text.val}</p>
     </p>
   );
 };
