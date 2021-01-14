@@ -1,0 +1,51 @@
+.crunch_list_title {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+
+.title_container {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.image_container {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.title {
+  position: relative;
+  display: inline-block;
+  top: -7.5px;
+  font-size: 20px;
+  margin-left: 5px;
+  transition: 0.2s;
+}
+
+.subtitle {
+  position: relative;
+  margin-left: 20px;
+}

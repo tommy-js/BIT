@@ -12,7 +12,7 @@ export const Team: React.FC = () => {
     {
       name: "Tommy Benjamin",
       description:
-        "Lead developer on GreenStack and CrunchList. Built BIT site.",
+        "Lead developer on GreenStack and Buttermilk. Built BIT site.",
     },
   ];
 

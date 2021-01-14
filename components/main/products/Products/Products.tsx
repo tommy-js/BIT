@@ -4,7 +4,7 @@ import { ProductElement } from "../ProductElement/ProductElement";
 import { ProductDescriptor } from "../ProductDescriptor/ProductDescriptor";
 import styles from "./styles.module.scss";
 const greenstack_logo = require("../../../../public/greenstack_logo.png");
-const crunchlist_logo = require("../../../../public/crunchlist_logo.png");
+const buttermilk_logo = require("../../../../public/buttermilk_logo.png");
 
 type Product = {
   img: string;
@@ -40,12 +40,12 @@ export const Products: React.FC = () => {
       id: 0,
     },
     {
-      img: crunchlist_logo,
-      title: "CrunchList",
+      img: buttermilk_logo,
+      title: "Buttermilk",
       shortDesc:
-        "Productivity platform built to help the user maximize their time utilization.",
-      color: "red",
-      link: "/products/crunchlist",
+        "Platform for adventurers to share their favorite locations and activities.",
+      color: "orange",
+      link: "/products/buttermilk",
       id: 1,
     },
   ];
