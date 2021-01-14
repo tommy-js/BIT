@@ -1,10 +1,23 @@
 import React from "react";
+import { Image } from "../../Image/Image";
+import { Details } from "../../Details/Details";
+import { Text } from "../../Text/Text";
 import styles from "./styles.module.scss";
 
-export const Update01Page: React.FC = () => {
+interface Props {
+  data: any;
+}
+
+export const Update01Page: React.FC<Props> = (props) => {
   return (
     <div className={styles.update_01_page}>
-      <p>Update 01</p>
+      <Image imageURL={props.data.imageURL} />
+      <Details
+        title={props.data.title}
+        timestamp={props.data.timestamp}
+        version={props.data.version}
+      />
+      <Text text={props.data.text} />
     </div>
   );
 };

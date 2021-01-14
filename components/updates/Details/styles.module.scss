@@ -1,0 +1,20 @@
+.details {
+  position: relative;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.timestamp,
+.version {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 15px;
+  font-size: 14px;
+  color: grey;
+}
