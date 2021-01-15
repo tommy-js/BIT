@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-const logo = require("../../../../public/crunchlist_logo.png");
+const logo = require("../../../../public/buttermilk_logo.png");
 
 export const Title: React.FC = () => {
   return (
