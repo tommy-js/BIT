@@ -1,0 +1,30 @@
+.guides {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.left,
+.right {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.text {
+  line-height: 165%;
+  font-size: 18px;
+}
+
+.img_block {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+}

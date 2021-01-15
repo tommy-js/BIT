@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ProductTitle } from "../ProductTitle/ProductTitle";
 import { ProductElement } from "../ProductElement/ProductElement";
-import { ProductDescriptor } from "../ProductDescriptor/ProductDescriptor";
+import { GreenStackDescriptor } from "../GreenStackDescriptor/GreenStackDescriptor";
+import { ButtermilkDescriptor } from "../ButtermilkDescriptor/ButtermilkDescriptor";
 import styles from "./styles.module.scss";
 const greenstack_logo = require("../../../../public/greenstack_logo.png");
 const buttermilk_logo = require("../../../../public/buttermilk_logo.png");
@@ -54,6 +55,11 @@ export const Products: React.FC = () => {
     setSelected(id);
   }
 
+  function returnConditionally() {
+    if (selected === 0) return <GreenStackDescriptor />;
+    else if (selected === 1) return <ButtermilkDescriptor />;
+  }
+
   return (
     <div className={styles.products}>
       <ProductTitle />
@@ -69,7 +75,7 @@ export const Products: React.FC = () => {
           />
         ))}
       </div>
-      <ProductDescriptor title={title} shortDesc={desc} link={link} />
+      {returnConditionally()}
     </div>
   );
 };
