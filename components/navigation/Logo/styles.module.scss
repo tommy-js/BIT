@@ -23,6 +23,13 @@
   position: relative;
   top: -10px;
   font-size: 22px;
+  color: black;
   display: inline-block;
+  transition: 0.2s;
   @include noselect;
+}
+
+.title:hover {
+  color: orange;
+  transition: 0.2s;
 }

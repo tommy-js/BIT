@@ -21,7 +21,7 @@ export const GreenStackContainer: React.FC = () => {
 
 const GreenStackLink = React.forwardRef(({ onClick, href, expanded }, ref) => {
   return (
-    <a href={href} onClick={onClick} ref={ref}>
+    <a className={styles.link} href={href} onClick={onClick} ref={ref}>
       <div className={styles.image_container}>
         <img
           className={styles.image}
