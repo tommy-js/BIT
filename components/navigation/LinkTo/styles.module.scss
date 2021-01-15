@@ -1,0 +1,12 @@
+.link_to {
+  position: relative;
+  display: inline-block;
+  top: -10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.link_to:hover {
+  color: orange;
+  transition: 0.3s;
+}

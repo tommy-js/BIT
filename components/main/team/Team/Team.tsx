@@ -10,9 +10,9 @@ type Member = {
 export const Team: React.FC = () => {
   const members = [
     {
-      name: "Tommy Benjamin",
+      name: "Tyler Blovat",
       description:
-        "Lead developer on GreenStack and Buttermilk. Built BIT site.",
+        "Developer for GreenStack, Buttermilk and BIT. I became interested in web development in 2020 when I was in college. Since then I've built many small projects and spent a lot of time improving my skills. While I am primarily a React developer, I'm interested in all technologies, and am always learning more.",
     },
   ];
 

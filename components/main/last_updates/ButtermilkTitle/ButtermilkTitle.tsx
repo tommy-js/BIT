@@ -9,16 +9,19 @@ export const ButtermilkTitle: React.FC<Props> = (props) => {
   const [height, setHeight] = useState("50px");
   const [backgroundColor, setBackgroundColor] = useState("transparent");
   const [color, setColor] = useState("white");
+  const [versionColor, setVersionColor] = useState("transparent");
 
   useEffect(() => {
     if (props.expanded === true) {
       setHeight("100px");
       setBackgroundColor("white");
       setColor("black");
+      setVersionColor("black");
     } else {
       setHeight("50px");
       setBackgroundColor("transparent");
       setColor("white");
+      setVersionColor("transparent");
     }
   }, [props.expanded]);
 
@@ -35,7 +38,10 @@ export const ButtermilkTitle: React.FC<Props> = (props) => {
           />
         </div>
         <p style={{ color }} className={styles.title}>
-          Buttermilk
+          Buttermilk{" "}
+          <span style={{ color: versionColor }} className={styles.version_num}>
+            [Version 0.1]
+          </span>
         </p>
       </div>
       <div className={styles.subtitle}>

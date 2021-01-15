@@ -2,7 +2,6 @@ import React from "react";
 import { UpdateContainer } from "../last_updates/UpdateContainer/UpdateContainer";
 import { RecentUpdates } from "../recent_updates/RecentUpdates/RecentUpdates";
 import { Products } from "../products/Products/Products";
-import { Team } from "../team/Team/Team";
 import styles from "./styles.module.scss";
 
 export const Homepage: React.FC = () => {
@@ -11,7 +10,6 @@ export const Homepage: React.FC = () => {
       <UpdateContainer />
       <RecentUpdates />
       <Products />
-      <Team />
     </div>
   );
 };
