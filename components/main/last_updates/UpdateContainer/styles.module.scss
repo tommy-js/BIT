@@ -6,3 +6,9 @@
   border-bottom: 1px solid grey;
   box-shadow: 1px 1px 5px grey;
 }
+
+@media only screen and (max-width: 900px) {
+  .update_container {
+    height: 130vh;
+  }
+}

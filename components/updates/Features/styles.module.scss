@@ -13,3 +13,21 @@
   margin-top: 5px;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 900px) {
+  .features {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    font-size: 26px;
+  }
+
+  .item {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+}

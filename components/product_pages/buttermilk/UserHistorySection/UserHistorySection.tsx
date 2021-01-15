@@ -6,7 +6,7 @@ export const UserHistorySection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>User History</h2>
+        <h2 className={styles.header}>User History</h2>
         <p className={styles.text}>
           We understand that a lot of the time when you find an interesting
           guide, story, or spot you'll be coming back to it in the future.

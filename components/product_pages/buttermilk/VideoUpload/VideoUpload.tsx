@@ -6,7 +6,7 @@ export const VideoUpload: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>Video and Images</h2>
+        <h2 className={styles.header}>Video and Images</h2>
         <p className={styles.text}>
           Video and images are essential tools for today's story-tellers. Upload
           your new videos and pictures to Buttermilk and have it get seen by

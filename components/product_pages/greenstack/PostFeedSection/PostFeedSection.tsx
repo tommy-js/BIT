@@ -6,7 +6,7 @@ export const PostFeedSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>Post Feed</h2>
+        <h2 className={styles.header}>Post Feed</h2>
         <p className={styles.text}>
           GreenStack is built to be collaborative and entertaining. The feed
           system we've built is designed for the purpose of always keeping new

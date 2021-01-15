@@ -6,7 +6,7 @@ export const FeedSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>Feed</h2>
+        <h2 className={styles.header}>Feed</h2>
         <p className={styles.text}>
           Buttermilk is designed to allow the user to scroll through pages of
           results quickly and easily. This lets them parse through the best and

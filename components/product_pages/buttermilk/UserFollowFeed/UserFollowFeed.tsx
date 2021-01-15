@@ -6,7 +6,7 @@ export const UserFollowFeed: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>User Follower Feed</h2>
+        <h2 className={styles.header}>User Follower Feed</h2>
         <p className={styles.text}>
           Follow your favorite climbers, sailors, and runners and get their most
           recent content delivered right to you with the follower feed. This

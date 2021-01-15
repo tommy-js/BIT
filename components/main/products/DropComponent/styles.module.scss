@@ -32,3 +32,40 @@
 .img {
   width: 100%;
 }
+
+@media only screen and (max-width: 900px) {
+  .drop_component {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .left,
+  .right {
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .left {
+    vertical-align: top;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .text {
+    line-height: 165%;
+    font-size: 18px;
+  }
+
+  .img_block {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .img {
+    width: 100%;
+  }
+}

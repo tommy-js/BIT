@@ -6,7 +6,7 @@ export const UserTaggingSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>User Tagging</h2>
+        <h2 className={styles.header}>User Tagging</h2>
         <p className={styles.text}>
           Because no social platform would be complete without user interaction,
           we've built a tagging and notification system that makes it trivial to

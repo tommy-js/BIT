@@ -6,7 +6,7 @@ export const StockIndexSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>Stock Index</h2>
+        <h2 className={styles.header}>Stock Index</h2>
         <p className={styles.text}>
           Without a doubt one of our best features is the highly-searchable
           index we've constructed to give you a better way to find new companies

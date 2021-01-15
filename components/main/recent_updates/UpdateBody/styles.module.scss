@@ -4,3 +4,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media only screen and (max-width: 900px) {
+  .update_body {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

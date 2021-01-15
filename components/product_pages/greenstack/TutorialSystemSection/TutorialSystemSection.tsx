@@ -6,7 +6,7 @@ export const TutorialSystemSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>Tutorial System</h2>
+        <h2 className={styles.header}>Tutorial System</h2>
         <p className={styles.text}>
           To be blunt, learning about the stock market is often boring. It's a
           bunch of charts and uninteresting terms, and learning about it can

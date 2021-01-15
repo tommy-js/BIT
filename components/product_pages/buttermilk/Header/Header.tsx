@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
       <h1 className={styles.title}>A Site For The Modern Adventurer</h1>
       <p className={styles.text}>
         In 2021 I decided that I wanted to build a beautiful, intuitive, and
-        accessible website for both the serious trailblazer and weekend-warrior
+        accessible website for the serious trailblazer and weekend-warrior
         alike. As an avid boulderer, I've long been disappointed with the lack
         of well-engineered websites that fit my needs. Couple this with a
         general lacking of space for climbers to get together online and

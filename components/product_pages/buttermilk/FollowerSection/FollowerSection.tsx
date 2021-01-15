@@ -6,7 +6,7 @@ export const FollowerSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>Follower</h2>
+        <h2 className={styles.header}>Follower</h2>
         <p className={styles.text}>
           Buttermilk is designed to be collaborative; to help you take advantage
           of this beautiful, broad world we all share. Follow others who inspire

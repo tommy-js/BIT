@@ -6,7 +6,7 @@ export const UserUploadedSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>User Content</h2>
+        <h2 className={styles.header}>User Content</h2>
         <p className={styles.text}>
           We believe the best ideas come from you; those who venture out into
           the unknown. For that reason, we've designed Buttermilk to be composed

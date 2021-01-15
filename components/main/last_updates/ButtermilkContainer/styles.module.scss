@@ -23,3 +23,12 @@
 .link {
   color: black;
 }
+
+@media only screen and (max-width: 900px) {
+  .buttermilk_container {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+}

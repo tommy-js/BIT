@@ -6,7 +6,7 @@ export const ImageUploadSection: React.FC = () => {
   return (
     <div className={styles.feed_section}>
       <div className={styles.left}>
-        <h2>User Content</h2>
+        <h2 className={styles.header}>User Content</h2>
         <p className={styles.text}>
           Of course, no post or comment would be complete without user
           interaction in the form of images and video, which is why we've built
